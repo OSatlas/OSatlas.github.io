@@ -46,21 +46,36 @@
 </head>
 <body>
 
-  <div class="navbar">
-    <div class="dropdown">
-        <button class="dropbtn">
-            Related Works
-        </button>
-        <div class="dropdown__arrow"></div>
-        <div class="dropdown-content">
-            <a href="https://os-copilot.github.io/">OS-Copilot</a>
-            <a href="https://github.com/njucckevin/SeeClick">SeeClick</a>
-            <a href="https://chengyou-jia.github.io/AgentStore-Home/">AgentStore</a>
-            <!-- add more project here -->
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://os-copilot.github.io">
+            OS-Copilot
+          </a>
+          <a class="navbar-item" href="https://github.com/njucckevin/SeeClick">
+            SeeClick
+          </a>
+          <a class="navbar-item" href="https://chengyou-jia.github.io/AgentStore-Home/">
+            AgentStore
+          </a>
         </div>
+      </div>
     </div>
-</div>
 
+  </div>
+</nav>
 
 
   <section class="hero">
@@ -171,11 +186,10 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
         <source src="static/videos/demo.mp4"
         type="video/mp4">
       </video>
@@ -184,8 +198,41 @@
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 <!-- End teaser video -->
+
+<section class="section hero">  
+  <div class="container is-max-desktop">
+    <div class="columns is-justify-content-center">
+      <div class="column is-6">
+        <div class="video-container">
+          <video poster="" id="video1" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-centered"><b>💻 Demo1: Hide `__pycache__` in VS Code.</b></p>
+        </div>
+      </div>
+      <div class="column is-6"> 
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <source src="static/videos/demo.mp4" type="video/mp4">
+        </video>
+        <p class="has-text-centered"><b>🌐 Demo2: Enlarge Font Size in Chrome.</b></p>
+      </div>
+    </div>  
+    <div class="columns is-justify-content-center">  
+      <div class="column is-6">
+        <div class="video-container">  
+          <video poster="" id="tree" autoplay controls muted loop height="100%">
+            <source src="static/videos/demo.mp4" type="video/mp4">
+          </video>
+          <p class="has-text-centered"><b>📱 Demo3: Send SMS via Simple Messenger.</b></p>
+        </div>  
+      </div>  
+    </div>
+  </div>  
+</section>
+
+
 
 <!-- Paper abstract -->
 <section class="section hero">
