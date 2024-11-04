@@ -119,7 +119,7 @@
               <a href="https://scholar.google.com/citations?user=pKf5LtQAAAAJ&hl=en" target="_blank">Paul Pu Liang</a><sup>4</sup>,
             </span>
             <span class="author-block">
-              Yu Qiao</a><sup>1</sup>
+              <a href="https://scholar.google.com/citations?user=gFtI-8QAAAAJ&hl=en" target="_blank">Yu Qiao</a><sup>1</sup>
             </span>
           </div>
           <div class="is-size-5 publication-authors">
@@ -135,7 +135,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="static/pdfs/2410.23218v1.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2410.23218" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -238,8 +238,9 @@
 <section class="hero">
   <div class="hero-body">
       <div class="container is-max-desktop">
-          <div class="columns is-centered">
+          <div class="columns is-centered has-text-centered">
               <div class="column is-four-fifths">
+                  <h2 class="title is-3">Overview</h2>
                   <div class="item">
                       <!-- Your image here -->
                       <img src="static/images/Intro.png" alt="os-atlas" />
@@ -273,19 +274,141 @@
 <!-- End paper abstract -->
 
 
+
+
+<section class="hero is-small"></section>
+  <div class="hero-body">
+      <div class="container  is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                  <h2 class="title is-3">Grounding Data Collection</h2>
+                  <div class="item">
+                      <!-- Your image here -->
+                      <img src="static/images/grounding_data.png" alt="ss" style="max-width: 75%; height: auto;"/>
+                      <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+                        
+                      </h2>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-small"></section>
+  <div class="hero-body">
+      <div class="container  is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                  <h2 class="title is-3">Training Pipeline</h2>
+                  <div class="item">
+                      <!-- Your image here -->
+                      <img src="static/images/pipeline.png" alt="ss" />
+                      <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+                        Overall training pipeline of OS-Atlas. We first perform large-scale pre-training using 13M GUI grounding data collected to build OS-Atlas-Base. Next, we conduct multitask fine-tuning
+on agent data, resulting in OS-Atlas.
+                      </h2>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+
+<section class="hero is-small">
+  <div class="hero-body">
+      <div class="container  is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                  <h2 class="title is-3">Experiments: Grounding Tasks</h2>
+                  <h2 class="title is-5" style="text-align: left;">ScreenSpot</h2>
+                  <div class="item">
+                      <!-- Your image here -->
+                      <img src="static/images/screenspot_res.png" alt="ss" />
+                      <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+                        Grounding accuracy on ScreenSpot. The best results are in bold.
+                      </h2>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="hero is-small"></section>
+  <div class="hero-body">
+      <div class="container  is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                  <h2 class="title is-5" style="text-align: left;">OS-World</h2>
+                  <div class="item">
+                      <!-- Your image here -->
+                      <img src="static/images/screenspot_res.png" alt="ss" />
+                      <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+                        Successful rate on OS World benchmark, divided by apps (domains).
+                      </h2>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+      <div class="container  is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                  <h2 class="title is-3">Experiments: Agent Tasks</h2>
+                  <h2 class="title is-5" style="text-align: left;">Web & Desktop Platform</h2>
+                  <div class="item">
+                      <!-- Your image here -->
+                      <img src="static/images/web_desktop_res.png" alt="ss" />
+                      <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+                        Results on web and desktop tasks. InternVL-2/Qwen2-VL and OS-Atlas-4/7B differ in that the former utilizes the original checkpoints, while the latter is fine-tuned on OS-Atlas-Base.
+                      </h2>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+<section class="hero is-small"></section>
+  <div class="hero-body">
+      <div class="container  is-max-desktop">
+          <div class="columns is-centered has-text-centered">
+              <div class="column is-four-fifths">
+                  <h2 class="title is-5" style="text-align: left;">Mobile Platform</h2>
+                  <div class="item">
+                      <!-- Your image here -->
+                      <img src="static/images/mobile_res.png" alt="ss" />
+                      <h2 class="subtitle has-text-centered" style="font-size: 16px;">
+                        Results on mobile tasks.
+                      </h2>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@misc{wu2024osatlasfoundationactionmodel,
-        title={OS-ATLAS: A Foundation Action Model for Generalist GUI Agents}, 
-        author={Zhiyong Wu and Zhenyu Wu and Fangzhi Xu and Yian Wang and Qiushi Sun and Chengyou Jia and Kanzhi Cheng and Zichen Ding and Liheng Chen and Paul Pu Liang and Yu Qiao},
-        year={2024},
-        eprint={2410.23218},
-        archivePrefix={arXiv},
-        primaryClass={cs.CL},
-        url={https://arxiv.org/abs/2410.23218}, 
-  }</code></pre>
+      <pre><code>@article{wu2024atlas,
+        title={OS-ATLAS: A Foundation Action Model for Generalist GUI Agents},
+        author={Wu, Zhiyong and Wu, Zhenyu and Xu, Fangzhi and Wang, Yian and Sun, Qiushi and Jia, Chengyou and Cheng, Kanzhi and Ding, Zichen and Chen, Liheng and Liang, Paul Pu and others},
+        journal={arXiv preprint arXiv:2410.23218},
+        year={2024}
+      }</code></pre>
     </div>
 </section>
 <!--End BibTex citation -->
